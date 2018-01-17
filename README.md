@@ -15,6 +15,7 @@
 2) you have a run.sh you can customize for your need :
 
  > export EXT_DIR='/home/debian/nginx_mobsfv2/conf'
+ 
  > docker run -d \
  > -p 80:80 -p 443:443 \
  > -e 'DH_SIZE=512' \
