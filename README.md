@@ -2,7 +2,7 @@
 a nginx reverse proxy with ssl and auth for MobSF
 
 this docker container will let you install a ssl reverse proxy with basic authentication in front of your mobsf 
-=========
+==
 
 1) to build the image 
 
@@ -13,26 +13,30 @@ if not :
   ``docker build --no-cache  -t rp4mobsf:latest . ``
 
 2) you have a run.sh you can customize for your need :
-  ``
-export EXT_DIR='/home/debian/nginx_mobsfv2/conf'
-docker run -d \
--p 80:80 -p 443:443 \
--e 'DH_SIZE=512' \
--e 'FORWARD_HOST=172.17.0.2' \
--e 'FORWARD_PORT=8000' \
--v $EXT_DIR:/etc/nginx/external/ \
---name nginx_mobsf \
-nginx_mobsf:latest ``
 
   ``
-EXT_DIR is the path to your conf directory which contain configuration and certificate
-FORWARD_HOST is the @IP or FQDN or your MobSF server
-FORWARD_PORT is the port used to access MOBSF web interface``
+  export EXT_DIR='/home/debian/nginx_mobsfv2/conf'
+  docker run -d \
+  -p 80:80 -p 443:443 \
+  -e 'DH_SIZE=512' \
+  -e 'FORWARD_HOST=172.17.0.2' \
+  -e 'FORWARD_PORT=8000' \
+  -v $EXT_DIR:/etc/nginx/external/ \
+  --name rp4mobsf \
+  rp4mobsf:latest ``
 
-3) Default user :
+3) Parameters:
+
+ ``
+  EXT_DIR is the path to your conf directory which contain configuration and certificate
+  FORWARD_HOST is the @IP or FQDN or your MobSF server
+  FORWARD_PORT is the port used to access MOBSF web interface``
+
+4) Default user :
+
 ``Default user is foo password bar``
 
-4) Managing password 
+5) Managing password 
 
 if you want to change or add user, you must use htpasswd binary to generate password and put the poassword in the auth.htppasswd file located in your conf directory 
 
