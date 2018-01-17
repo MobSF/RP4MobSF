@@ -22,7 +22,7 @@ this docker container will let you install a ssl reverse proxy with basic authen
  > -e 'FORWARD_PORT=8000' \
  > -v $EXT_DIR:/etc/nginx/external/ \
  > --name rp4mobsf \
- > rp4mobsf:latest `
+ > rp4mobsf:latest 
 
 3) Parameters:
 
