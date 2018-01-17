@@ -6,11 +6,11 @@ this docker container will let you install a ssl reverse proxy with basic authen
 
 1) to build the image 
 
-if you are behing a proxy 
-  ``docker build --no-cache --build-arg http_proxy=${http_proxy} --build-arg https_proxy=${https_proxy}  -t rp4mobsf:latest .``
+   * if you are behing a proxy 
+     * docker build --no-cache --build-arg http_proxy=${http_proxy} --build-arg https_proxy=${https_proxy}  -t rp4mobsf:latest .
 
-if not :
-  ``docker build --no-cache  -t rp4mobsf:latest . ``
+   * if not :
+     * docker build --no-cache  -t rp4mobsf:latest . 
 
 2) you have a run.sh you can customize for your need :
 
