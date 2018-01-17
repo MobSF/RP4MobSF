@@ -45,6 +45,11 @@ this docker container will let you install a ssl reverse proxy with basic authen
 
   * to install and use htpasswd on your system refer too : 
     * https://httpd.apache.org/docs/current/programs/htpasswd.html
+    
+6) Certificates 
+
+  * if you alreadeay have certificates put it in conf/pki/  ($EXT_DIR/pki/)
+  * if you don't have the image will create autosigned certificates
 
 
 This image is based on:
