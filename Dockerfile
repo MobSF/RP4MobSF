@@ -2,8 +2,8 @@ FROM nginx
 LABEL maintainer="superpoussin22"
 
 ENV LANG C.UTF-8 \
-ENV FORWARD_PORT=80
-ENV FORWARD_HOST=web
+ENV FORWARD_PORT=8000
+ENV FORWARD_HOST=mobsf
 
 RUN apt-get update; apt-get install -y \
     openssl
