@@ -1,8 +1,8 @@
 # RP4MobSF
-a nginx reverse proxy with ssl and auth for MobSF
+## a nginx reverse proxy with ssl and auth for MobSF
 
-this docker container will let you install a ssl reverse proxy with basic authentication in front of your mobsf 
-==
+## This docker image will let you run a ssl reverse proxy with basic authentication in front of your mobsf 
+
 
 1) to build the image 
 
