@@ -48,7 +48,7 @@
     
 6) Certificates 
 
-  * if you alreadeay have certificates put it in conf/pki/  ($EXT_DIR/pki/)
+  * if you already have certificates put it in conf/pki/  ($EXT_DIR/pki/)
   * if you don't have the image will create autosigned certificates
 
 
