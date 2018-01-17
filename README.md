@@ -14,7 +14,7 @@ if not :
 
 2) you have a run.sh you can customize for your need :
 
-  ``
+  `
   export EXT_DIR='/home/debian/nginx_mobsfv2/conf'
   docker run -d \
   -p 80:80 -p 443:443 \
@@ -23,14 +23,14 @@ if not :
   -e 'FORWARD_PORT=8000' \
   -v $EXT_DIR:/etc/nginx/external/ \
   --name rp4mobsf \
-  rp4mobsf:latest ``
+  rp4mobsf:latest `
 
 3) Parameters:
 
- ``
-  EXT_DIR is the path to your conf directory which contain configuration and certificate
-  FORWARD_HOST is the @IP or FQDN or your MobSF server
-  FORWARD_PORT is the port used to access MOBSF web interface``
+
+   ``EXT_DIR is the path to your conf directory which contain configuration and certificate ``
+   ``FORWARD_HOST is the @IP or FQDN or your MobSF server ``
+   ``FORWARD_PORT is the port used to access MOBSF web interface``
 
 4) Default user :
 
