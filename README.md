@@ -15,7 +15,9 @@
 2) you have a run.sh you can customize for your need :
 
  > export CONF_DIR='/home/debian/nginx_mobsfv2/conf/conf.d'
+ 
  > export PKI_DIR='/home/debian/nginx_mobsfv2/conf/pki'
+ 
  > export AUTH_DIR='/home/debian/nginx_mobsfv2/conf/auth'
  
  > docker run -d \
