@@ -55,3 +55,5 @@
 
 This image is based on:
 MarvAmBass/docker-nginx-ssl-secure
+
+You have another version in the other branch Extras which did not show nginx and nginx version in client header 
