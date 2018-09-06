@@ -1,6 +1,6 @@
 #FROM nginx
-From debian:latest
-LABEL maintainer="vsuperpoussin22"
+FROM debian:jessie
+LABEL maintainer="superpoussin22"
 
 ENV LANG C.UTF-8 \
 ENV FORWARD_PORT=80
