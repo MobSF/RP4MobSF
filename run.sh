@@ -10,5 +10,5 @@ docker run -d \
 -v $PKI_DIR:/etc/nginx/pki:rw \
 -v $AUTH_DIR:/etc/nginx/auth:ro \
 --name nginx_mobsf \
-devopssea.bzh/nginx_mobsf  
+rp4mobsf:latest  
 
