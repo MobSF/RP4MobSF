@@ -28,6 +28,9 @@ RUN sed -i 's/access_log.*/access_log \/dev\/stdout;/g' /etc/nginx/nginx.conf; \
 ADD entrypoint.sh /opt/entrypoint.sh
 RUN chmod a+x /opt/entrypoint.sh
 
+#create cache directory
+RUN mkdir -p /data/nginx/cache
+
 RUN rm -rf /var/lib/apt/lists/*
 
 ENTRYPOINT ["/opt/entrypoint.sh"]
