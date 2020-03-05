@@ -67,7 +67,12 @@
   * nginx will send a custom name not nginx in header
     * to change the value :
       * edit basic .conf and modify : more_set_headers "Server: MobSF RP";
-      
+  
+ 8) Variables
+
+  * if you want upload a file bigger than 300M  you must modify client_max_body_size 300M; in auth.conf
+  * by default you have a 10 minutes cache so  if you go to recent scan just after doing an analysis, you will not see it.
+ 
 This image is based on:
 MarvAmBass/docker-nginx-ssl-secure
 
